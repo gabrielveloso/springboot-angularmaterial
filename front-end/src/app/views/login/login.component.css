@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+}
+.card {
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    
+  }

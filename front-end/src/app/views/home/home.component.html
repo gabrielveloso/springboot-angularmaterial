@@ -1,0 +1,21 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Cargos</span>
+    
+  </mat-toolbar>
+
+  <div>
+    
+    <mat-tab-group mat-align-tabs="center"  style="padding: 50px">
+        <mat-tab label="Consultar" >           
+            <app-consultar-cargos></app-consultar-cargos>
+        </mat-tab>
+        <mat-tab label="Inserir">
+            <app-inserir-cargo></app-inserir-cargo>
+        </mat-tab>
+    </mat-tab-group>
+   
+  </div>
+

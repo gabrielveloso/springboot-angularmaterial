@@ -1,0 +1,27 @@
+
+<div fxLayout="column"  fxLayoutAlign="start start" fxLayoutGap="10px">
+    <mat-form-field appearance="fill">
+        <mat-label>Unidade</mat-label>
+        <mat-select [(value)]="unidadeSelecionada">
+        <mat-option value="0">SELECIONE A UNIDADE</mat-option>
+        <mat-option *ngFor="let unidade of unidades"  [value]="unidade">{{unidade.nome}}</mat-option>          
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Nível</mat-label>
+        <mat-select [(value)]="nivelSelecionado">
+            <mat-option value="0">SELECIONE O NÍVEL</mat-option>
+            <mat-option *ngFor="let nivel of niveis"  [value]="nivel">{{nivel.nome}}</mat-option>  
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Atividade</mat-label>
+        <mat-select [(value)]="atividadeSelecionada">
+            <mat-option value="0">SELECIONE A ATIVIDADE</mat-option>
+            <mat-option *ngFor="let atividade of atividades"  [value]="atividade">{{atividade.nome}}</mat-option>  
+        </mat-select>
+    </mat-form-field>
+    
+    <button mat-stroked-button color="primary" (click)="inserir()">Inserir novo cargo</button>
+            
+</div>
