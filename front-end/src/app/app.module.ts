@@ -27,7 +27,14 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { InserirCargoComponent } from './views/inserir-cargo/inserir-cargo.component';
 import { HomeComponent } from './views/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { JwtModule } from "@auth0/angular-jwt";
+import { STORAGE_KEYS } from 'src/config/storage_keys.config';
+import {  AuthInterceptorProvider } from './shared/interceptor/auth.interceptor';
 
+
+export function tokenGetter() {
+  return localStorage.getItem(STORAGE_KEYS.localUser);
+}
 
 @NgModule({
   declarations: [
@@ -60,9 +67,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     MatTabsModule,
     MatSnackBarModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: tokenGetter,
+        //allowedDomains: ["example.com"],
+        //disallowedRoutes: ["http://example.com/examplebadroute/"],
+      },
+    }),
   ],
-  providers: [],  
+  providers: [
+    AuthInterceptorProvider
+  ],  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

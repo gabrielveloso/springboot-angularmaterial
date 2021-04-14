@@ -4,6 +4,7 @@ import { Elemento } from 'src/app/shared/model/elemento.model';
 import { CargoService } from 'src/app/shared/service/cargo.service';
 import {MatDialog} from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { StorageService } from 'src/app/shared/service/storage.service';
 
 @Component({
   selector: 'app-consultar-cargos',
@@ -26,13 +27,19 @@ export class ConsultarCargosComponent implements OnInit {
   displayedColumns: string[] = ["unidade", "nivel", "atividade","ocupado", "deletar"]
   dataSet: CargoElement[] = [];
   dataSet2: Cargo[] = [];
+  email?: string;
 
-  constructor(public cargoService : CargoService, public dialog: MatDialog, private _snackBar: MatSnackBar) {     
+  constructor(public cargoService : CargoService, 
+    public dialog: MatDialog, 
+    private _snackBar: MatSnackBar,
+    private storage: StorageService) {     
     this.cargos = [];
     this.getCargos();    
     this.getUnidades();
     this.getNiveis();
-    this.getAtividades();    
+    this.getAtividades();  
+    
+    
   }
 
   ngOnInit(): void {

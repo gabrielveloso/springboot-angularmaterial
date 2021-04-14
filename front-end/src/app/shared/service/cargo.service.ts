@@ -46,12 +46,7 @@ export class CargoService {
 
   
 
-  public login(email: string, senha: string) {
-    console.log(senha);
-    return this.httpClient.post<any>(`${environment.apiURLBase}/login`, { email, senha }, {
-      observe: 'response'
-    });
-}
+  
   
 
 }
