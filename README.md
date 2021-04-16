@@ -2,16 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
 
+<h2 align="center" style="margin-top: 0px;">tela de Login</h2>
 <p align="center">
-  <strong>Tela de Login.</strong>
-
   <img width="704" alt="Game screenshot" src="https://github.com/gabrielveloso/springboot-angularmaterial/blob/master/login.png">
+  <h2 align="center" style="margin-top: 0px;">Login View</h2>
 </p>
 
 <p align="center">
-  <strong>Tela de Login.</strong>
-
   <img width="704" alt="Game screenshot" src="https://github.com/gabrielveloso/springboot-angularmaterial/blob/master/portaria.png">
+  <h2 align="center" style="margin-top: 0px;">Insert and Search Views</h2>
 </p>
 
 ## TASKS
