@@ -15,7 +15,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 </p>
 
 ## TASKS
-- Login
+- Authentication
+- Authorization
+- Insert new cargo
+- Delete cargo
+- cargo search by unidade, atividade or nivel
 
 ## FRONT-END
 - Angular 11
@@ -31,6 +35,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
     - spring boot data jpa
     - spring boot security
 
+### Endpoints rest backend
+- /login
+- /usuario
+- /cargo
+- /atividade
+- /unidade
 
 
 
