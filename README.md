@@ -5,13 +5,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <p align="center">
   <strong>Tela de Login.</strong>
 
-  <img width="704" alt="Game screenshot" src="https://github.com/gabrielveloso/springboot-angularmaterial/login.png">
+  <img width="704" alt="Game screenshot" src="https://github.com/gabrielveloso/springboot-angularmaterial/blob/master/login.png">
 </p>
 
 <p align="center">
   <strong>Tela de Login.</strong>
 
-  <img width="704" alt="Game screenshot" src="https://github.com/gabrielveloso/springboot-angularmaterial/portaria.png">
+  <img width="704" alt="Game screenshot" src="https://github.com/gabrielveloso/springboot-angularmaterial/blob/master/portaria.png">
 </p>
 
 ## TASKS
