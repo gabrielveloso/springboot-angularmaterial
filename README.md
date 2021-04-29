@@ -12,7 +12,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   <img width="704" alt="Game screenshot" src="https://github.com/gabrielveloso/springboot-angularmaterial/blob/master/portaria.png"> 
 </p>
 
-## TASKS
+## FEATURES
 - Authentication
 - Authorization
 - Insert new cargo
